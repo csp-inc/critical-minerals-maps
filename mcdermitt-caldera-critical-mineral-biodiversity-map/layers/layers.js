@@ -27,27 +27,7 @@ var wms_layers = [];
 var lyr_EcologicalConnectivityCSP2023_2 = new ol.layer.Image({
         opacity: 1,
         
-    title: 'Ecological Connectivity - CSP (2023)<br />\
-    <img src="styles/legend/EcologicalConnectivityCSP2023_2_0.png" /> 6<br />\
-    <img src="styles/legend/EcologicalConnectivityCSP2023_2_1.png" /> 111<br />\
-    <img src="styles/legend/EcologicalConnectivityCSP2023_2_2.png" /> 165<br />\
-    <img src="styles/legend/EcologicalConnectivityCSP2023_2_3.png" /> 229<br />\
-    <img src="styles/legend/EcologicalConnectivityCSP2023_2_4.png" /> 271<br />\
-    <img src="styles/legend/EcologicalConnectivityCSP2023_2_5.png" /> 302<br />\
-    <img src="styles/legend/EcologicalConnectivityCSP2023_2_6.png" /> 329<br />\
-    <img src="styles/legend/EcologicalConnectivityCSP2023_2_7.png" /> 354<br />\
-    <img src="styles/legend/EcologicalConnectivityCSP2023_2_8.png" /> 379<br />\
-    <img src="styles/legend/EcologicalConnectivityCSP2023_2_9.png" /> 403<br />\
-    <img src="styles/legend/EcologicalConnectivityCSP2023_2_10.png" /> 427<br />\
-    <img src="styles/legend/EcologicalConnectivityCSP2023_2_11.png" /> 452<br />\
-    <img src="styles/legend/EcologicalConnectivityCSP2023_2_12.png" /> 478<br />\
-    <img src="styles/legend/EcologicalConnectivityCSP2023_2_13.png" /> 506<br />\
-    <img src="styles/legend/EcologicalConnectivityCSP2023_2_14.png" /> 535<br />\
-    <img src="styles/legend/EcologicalConnectivityCSP2023_2_15.png" /> 563<br />\
-    <img src="styles/legend/EcologicalConnectivityCSP2023_2_16.png" /> 592<br />\
-    <img src="styles/legend/EcologicalConnectivityCSP2023_2_17.png" /> 627<br />\
-    <img src="styles/legend/EcologicalConnectivityCSP2023_2_18.png" /> 677<br />\
-    <img src="styles/legend/EcologicalConnectivityCSP2023_2_19.png" /> 1478<br />' ,
+     title: 'Ecological Connectivity </br> <img style="max-width: 100%; max-height: 100%;" src="styles/legend/connectivity-legend.png" />',
         
         
         source: new ol.source.ImageStatic({
@@ -473,7 +453,7 @@ var lyr_McDermittCalderaBoundary_29 = new ol.layer.Vector({
             });
 var group_Boundaries = new ol.layer.Group({
                                 layers: [lyr_SurfaceManagementAgencyBLM_28,lyr_McDermittCalderaBoundary_29,],
-                                fold: 'open',
+                                fold: 'close',
                                 title: 'Boundaries'});
 var group_ODLTBoundaries = new ol.layer.Group({
                                 layers: [lyr_ProjectAreas_26,lyr_ConservedLands_27,],
@@ -481,7 +461,7 @@ var group_ODLTBoundaries = new ol.layer.Group({
                                 title: 'ODLT Boundaries'});
 var group_ExistingLithiumProjects = new ol.layer.Group({
                                 layers: [lyr_HiTechMcDermittCalderaExplorationProjectBoundary_24,lyr_ThackerPassProjectandExplorationBoundariesapproximate_25,],
-                                fold: 'close',
+                                fold: 'open',
                                 title: 'Existing Lithium Projects'});
 var group_MLRSMiningClaimsJune2026 = new ol.layer.Group({
                                 layers: [lyr_TECHINDUSTRIESLTD_9,lyr_ROCKYMOUNTAINPROSPECTORSLLC_10,lyr_RICKKEELMCCLINTICKLVGTRUST_11,lyr_OREGONENERGYLLC_12,lyr_NEVADASELECTROYALTYINC_13,lyr_METALSSEARCHLLC_14,lyr_LITHIUMVALLEYHOLDINGSCORP_15,lyr_LITHIUMNEVADALLC_16,lyr_KVPROJECTLLC_17,lyr_HITECHMINERALSINCHITECHMINERALSINC_18,lyr_GOLDCANYONRESOURCESUSAINC_19,lyr_FMSLITHIUMCORPORATION_20,lyr_CORDEROMINEINC_21,lyr_AMERICANINNOVATIVEMINERALSLLC_22,lyr_AMERICANCOLLOIDCO_23,],
@@ -500,7 +480,7 @@ var group_Basemaps = new ol.layer.Group({
                                 fold: 'open',
                                 title: 'Basemaps'});
 
-lyr_OpenStreetMap_0.setVisible(false);lyr_GoogleSatelliteHybrid_1.setVisible(false);lyr_EcologicalConnectivityCSP2023_2.setVisible(false);lyr_SagebrushConservationDesignHabitatCategories_3.setVisible(false);lyr_OregonDFWLahontanCutthroatTroutOccupiedStreams_4.setVisible(false);lyr_NDOWLahontanCutthroatTroutOccupiedStreams_5.setVisible(false);lyr_NDOWMappedPronghornHabitatandCorridors_6.setVisible(false);lyr_ORDFWPriorityWildlifeConnectivityAreas_7.setVisible(false);lyr_OregonDFWConservationOpportunityAreas_8.setVisible(false);lyr_TECHINDUSTRIESLTD_9.setVisible(false);lyr_ROCKYMOUNTAINPROSPECTORSLLC_10.setVisible(false);lyr_RICKKEELMCCLINTICKLVGTRUST_11.setVisible(false);lyr_OREGONENERGYLLC_12.setVisible(false);lyr_NEVADASELECTROYALTYINC_13.setVisible(false);lyr_METALSSEARCHLLC_14.setVisible(false);lyr_LITHIUMVALLEYHOLDINGSCORP_15.setVisible(false);lyr_LITHIUMNEVADALLC_16.setVisible(false);lyr_KVPROJECTLLC_17.setVisible(false);lyr_HITECHMINERALSINCHITECHMINERALSINC_18.setVisible(false);lyr_GOLDCANYONRESOURCESUSAINC_19.setVisible(false);lyr_FMSLITHIUMCORPORATION_20.setVisible(false);lyr_CORDEROMINEINC_21.setVisible(false);lyr_AMERICANINNOVATIVEMINERALSLLC_22.setVisible(false);lyr_AMERICANCOLLOIDCO_23.setVisible(false);lyr_HiTechMcDermittCalderaExplorationProjectBoundary_24.setVisible(false);lyr_ThackerPassProjectandExplorationBoundariesapproximate_25.setVisible(false);lyr_ProjectAreas_26.setVisible(false);lyr_ConservedLands_27.setVisible(false);lyr_SurfaceManagementAgencyBLM_28.setVisible(false);lyr_McDermittCalderaBoundary_29.setVisible(true);
+lyr_OpenStreetMap_0.setVisible(true);lyr_GoogleSatelliteHybrid_1.setVisible(true);lyr_EcologicalConnectivityCSP2023_2.setVisible(false);lyr_SagebrushConservationDesignHabitatCategories_3.setVisible(false);lyr_OregonDFWLahontanCutthroatTroutOccupiedStreams_4.setVisible(false);lyr_NDOWLahontanCutthroatTroutOccupiedStreams_5.setVisible(false);lyr_NDOWMappedPronghornHabitatandCorridors_6.setVisible(false);lyr_ORDFWPriorityWildlifeConnectivityAreas_7.setVisible(false);lyr_OregonDFWConservationOpportunityAreas_8.setVisible(false);lyr_TECHINDUSTRIESLTD_9.setVisible(false);lyr_ROCKYMOUNTAINPROSPECTORSLLC_10.setVisible(false);lyr_RICKKEELMCCLINTICKLVGTRUST_11.setVisible(false);lyr_OREGONENERGYLLC_12.setVisible(false);lyr_NEVADASELECTROYALTYINC_13.setVisible(false);lyr_METALSSEARCHLLC_14.setVisible(false);lyr_LITHIUMVALLEYHOLDINGSCORP_15.setVisible(false);lyr_LITHIUMNEVADALLC_16.setVisible(false);lyr_KVPROJECTLLC_17.setVisible(false);lyr_HITECHMINERALSINCHITECHMINERALSINC_18.setVisible(false);lyr_GOLDCANYONRESOURCESUSAINC_19.setVisible(false);lyr_FMSLITHIUMCORPORATION_20.setVisible(false);lyr_CORDEROMINEINC_21.setVisible(false);lyr_AMERICANINNOVATIVEMINERALSLLC_22.setVisible(false);lyr_AMERICANCOLLOIDCO_23.setVisible(false);lyr_HiTechMcDermittCalderaExplorationProjectBoundary_24.setVisible(false);lyr_ThackerPassProjectandExplorationBoundariesapproximate_25.setVisible(false);lyr_ProjectAreas_26.setVisible(false);lyr_ConservedLands_27.setVisible(false);lyr_SurfaceManagementAgencyBLM_28.setVisible(false);lyr_McDermittCalderaBoundary_29.setVisible(true);
 var layersList = [group_Basemaps,group_WildlifeHabitatConnectivity,group_MLRSMiningClaimsJune2026,group_ExistingLithiumProjects,group_ODLTBoundaries,group_Boundaries];
 lyr_OregonDFWLahontanCutthroatTroutOccupiedStreams_4.set('fieldAliases', {'OBJECTID': 'OBJECTID', 'fhdFtrID': 'fhdFtrID', 'fhdRefID': 'fhdRefID', 'fhdRevDt': 'fhdRevDt', 'fhdONm': 'fhdONm', 'fhdOEnt': 'fhdOEnt', 'fhdSpNm': 'fhdSpNm', 'fhdRun': 'fhdRun', 'fhdLifeHst': 'fhdLifeHst', 'fhdUseTy': 'fhdUseTy', 'fhdBasis': 'fhdBasis', 'fhdStNm': 'fhdStNm', 'fhdGenus': 'fhdGenus', 'fhdSp': 'fhdSp', 'fhdSubSp': 'fhdSubSp', 'fhdOrig': 'fhdOrig', 'fhdProd': 'fhdProd', 'fhdComment': 'fhdComment', 'fhdESH': 'fhdESH', 'fhdBasisD': 'fhdBasisD', 'fhdNMF': 'fhdNMF', 'fhdBasisDt': 'fhdBasisDt', 'fhdBasisNm': 'fhdBasisNm', 'fhdBasisEnt': 'fhdBasisEnt', 'fhdBasisPrj': 'fhdBasisPrj', 'fhdBasisMethod': 'fhdBasisMethod', 'fhdAccess': 'fhdAccess', 'fhdBarrierFtrID': 'fhdBarrierFtrID', 'fhdEndExtent': 'fhdEndExtent', 'SHAPE_Length': 'SHAPE_Length', });
 lyr_NDOWLahontanCutthroatTroutOccupiedStreams_5.set('fieldAliases', {'OBJECTID': 'OBJECTID', 'Permanent_': 'Permanent_', 'FDate': 'FDate', 'Resolution': 'Resolution', 'GNIS_ID': 'GNIS_ID', 'GNIS_Name': 'GNIS_Name', 'LengthKM': 'LengthKM', 'ReachCode': 'ReachCode', 'FlowDir': 'FlowDir', 'WBArea_Per': 'WBArea_Per', 'FType': 'FType', 'FCode': 'FCode', 'MainPath': 'MainPath', 'InNetwork': 'InNetwork', 'Visibility': 'Visibility', 'NHDPlusID': 'NHDPlusID', 'VPUID': 'VPUID', 'Enabled': 'Enabled', 'Pop_Name': 'Pop_Name', 'InterCon_N': 'InterCon_N', 'Shape_Leng': 'Shape_Leng', 'Shape__Length': 'Shape__Length', });
